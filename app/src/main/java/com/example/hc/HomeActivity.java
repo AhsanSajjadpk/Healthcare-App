@@ -43,5 +43,12 @@ exit.setOnClickListener(new View.OnClickListener() {
 });
 
 
+CardView findDoctor = findViewById(R.id.cardFindDoctor);
+findDoctor.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(HomeActivity.this , FindDoctorActivity.class ));
+    }
+});
     }
 }
