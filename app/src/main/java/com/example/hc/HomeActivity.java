@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
 exit.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        SharedPreferences. Editor editor = sharedpreferences.edit();
+        SharedPreferences.Editor editor = sharedpreferences.edit();
         editor.clear();
         editor.apply();
         startActivity(new Intent(HomeActivity.this, LoginActivity.class));
