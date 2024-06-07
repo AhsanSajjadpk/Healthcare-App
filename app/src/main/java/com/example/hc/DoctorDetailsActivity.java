@@ -20,47 +20,47 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details1 =
             {
 
-                    {"Doctor Name Ajit Saste", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
-                    {"Doctor Name: Prasad Pawar", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name: Swapnil Kale", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
-                    {"Doctor Name: Deepak Deshmukh", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
-                    {"Doctor Name: Ashok Panda", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name: Mutayyab Imran", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: Ali Haider", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name: Imran Khan", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
+                    {"Doctor Name: Nawaz Sharif", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
+                    {"Doctor Name: Bilal Khan", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
             };
     private String[][] doctor_details2 =
             {
 
-                    {"Doctor Name Ajit Saste", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
-                    {"Doctor Name: Prasad Pawar", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name: Swapnil Kale", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
-                    {"Doctor Name: Deepak Deshmukh", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
-                    {"Doctor Name: Ashok Panda", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name: Usman khan", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: mumtaz baagi", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name: ayesha khan", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
+                    {"Doctor Name: shaikh rasheed", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
+                    {"Doctor Name: shahbaz sahrif", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
             };
     private String[][] doctor_details3 =
             {
 
-                    {"Doctor Name Ajit Saste", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
-                    {"Doctor Name: Prasad Pawar", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name: Swapnil Kale", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
-                    {"Doctor Name: Deepak Deshmukh", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
-                    {"Doctor Name: Ashok Panda", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name: Shahrukh shah", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: ikram ali", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name: usman khawaja", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
+                    {"Doctor Name: muhammad ali", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
+                    {"Doctor Name: naeem irfan", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
             };
     private String[][] doctor_details4 =
             {
 
-                    {"Doctor Name Ajit Saste", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
-                    {"Doctor Name: Prasad Pawar", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name: Swapnil Kale", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
-                    {"Doctor Name: Deepak Deshmukh", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
-                    {"Doctor Name: Ashok Panda", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name: shah mir", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: shahbaz shah", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name: qadir patel", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
+                    {"Doctor Name: Asif khan", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
+                    {"Doctor Name: bhutto shah", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
             };
     private String[][] doctor_details5 =
             {
 
-                    {"Doctor Name Ajit Saste", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
-                    {"Doctor Name: Prasad Pawar", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name: Swapnil Kale", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
-                    {"Doctor Name: Deepak Deshmukh", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
-                    {"Doctor Name: Ashok Panda", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name: haseeb siddique", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: Sameer khan", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name: Mahad Khan", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
+                    {"Doctor Name: Ali khan", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
+                    {"Doctor Name: Usman Qadir", "Hospital Address: Katraj", "Exp: 7yrs", "Mobile No:7798989898", "800"}
             };
     TextView tv;
     Button btn;
