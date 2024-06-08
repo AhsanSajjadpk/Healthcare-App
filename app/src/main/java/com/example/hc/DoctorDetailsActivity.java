@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
@@ -29,7 +30,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details2 =
             {
 
-                    {"Doctor Name: Usman khan", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: Adeeb ul Hassan", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
                     {"Doctor Name: mumtaz baagi", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
                     {"Doctor Name: ayesha khan", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
                     {"Doctor Name: shaikh rasheed", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
@@ -47,7 +48,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details4 =
             {
 
-                    {"Doctor Name: shah mir", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
+                    {"Doctor Name: Ahsan Sajjad", "Hospital Address: Pimpri", "Exp: 5yrs", "Mobile No:9898989898", "600"},
                     {"Doctor Name: shahbaz shah", "Hospital Address: Nigdi", "Exp: 15yrs", "Mobile No:7898989898", "900"},
                     {"Doctor Name: qadir patel", "Hospital Address : Pune", "Exp: 8yrs", "Mobile No:8898989898", "300"},
                     {"Doctor Name: Asif khan", "Hospital Address: Chinchwad", "Exp: 6yrs", "Mobile No:9898000000", "500"},
@@ -122,6 +123,13 @@ for (int i=0; i<doctor_details.length;i++){
     item.put("line5","Cons Fees: "+doctor_details[i][4] + "/-");
     list.add(item);
 }
+sa =new SimpleAdapter(this,list,
+        R.layout.multi_lines,
+        new String[]{"line1","line2","line3","line4","line5"},
+        new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
 
+);
+        ListView lst = findViewById(R.id.listViewDD);
+        lst.setAdapter(sa);
     }
 }
