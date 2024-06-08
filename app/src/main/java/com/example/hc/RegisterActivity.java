@@ -32,11 +32,11 @@ public class RegisterActivity extends AppCompatActivity {
             return insets;
         });
 
-        edUsername = findViewById(R.id.editTextRegUsername);
-        edEmail = findViewById(R.id.editTextRegEmail);
-        edPassword = findViewById(R.id.editTextRegPassword);
-        edConfirm = findViewById(R.id.editTextRegConfirmPassword);
-        btn = findViewById(R.id.buttonRegister);
+        edUsername = findViewById(R.id.editTextAppFullName);
+        edEmail = findViewById(R.id.editTextAppAddress);
+        edPassword = findViewById(R.id.editTextAppContactNum);
+        edConfirm = findViewById(R.id.editTextFees);
+        btn = findViewById(R.id.buttonAppRegister);
         tv = findViewById(R.id.textViewExistingUser);
 
 

@@ -3,6 +3,7 @@ package com.example.hc;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -131,5 +132,19 @@ sa =new SimpleAdapter(this,list,
 );
         ListView lst = findViewById(R.id.listViewDD);
         lst.setAdapter(sa);
+       lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           @Override
+           public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+               Intent it = new Intent(DoctorDetailsActivity.this,BookAppointmentActivity.class);
+                it.putExtra("Item1",title);
+
+               it.putExtra("Item2",doctor_details[i][0]);
+               it.putExtra("Item3",doctor_details[i][1]);
+               it.putExtra("Item4",doctor_details[i][3]);
+               it.putExtra("Item5",doctor_details[i][4]);
+               startActivity(it);
+           }
+       });
+
     }
 }
