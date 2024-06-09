@@ -45,10 +45,10 @@ public class BookAppointmentActivity extends AppCompatActivity {
         });
 
         tv = findViewById(R.id.textViewAppTitle);
-        ed1 = findViewById(R.id.editTextAppFullName);
-        ed2 = findViewById(R.id.editTextAppAddress);
-        ed3 = findViewById(R.id.editTextAppContactNum);
-        ed4 = findViewById(R.id.editTextFees);
+        ed1 = findViewById(R.id.editTextLTBFullName);
+        ed2 = findViewById(R.id.editTextLTBAddress);
+        ed3 = findViewById(R.id.editTextLTBPincode);
+        ed4 = findViewById(R.id.editTextLTBContact);
         btnBook = findViewById(R.id.buttonBookAppointment);
         btnBack = findViewById(R.id.buttonAppBack);
 
@@ -84,6 +84,16 @@ public class BookAppointmentActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 datePickerDialog.show();
+            }
+        });
+        // Time Picker
+        initTimePicker();
+
+        timeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                timePickerDialog.show();
             }
         });
 

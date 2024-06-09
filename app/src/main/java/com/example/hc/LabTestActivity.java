@@ -64,9 +64,9 @@ public class LabTestActivity extends AppCompatActivity {
             return insets;
         });
 
-        btnGoToCart = findViewById(R.id.buttonLTGoToCart);
-        btnBack = findViewById(R.id.buttonLTBack);
-        listView = findViewById(R.id.listViewLT);
+        btnGoToCart = findViewById(R.id.buttonCartBack);
+        btnBack = findViewById(R.id.buttonCartCheckout);
+        listView = findViewById(R.id.listViewCart);
 
 
 btnBack.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +104,13 @@ btnBack.setOnClickListener(new View.OnClickListener() {
                 it.putExtra("text3",packages[i][4]);
                 startActivity(it);
 
+            }
+        });
+
+        btnGoToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LabTestActivity.this,CardLabActivity.class));
             }
         });
 

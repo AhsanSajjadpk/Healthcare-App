@@ -43,7 +43,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         Intent intent =getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));
-      // tvTotalCost.setText(intent.getStringExtra("text3"+"/-----"));
+         tvTotalCost.setText(intent.getStringExtra("text3"+"/--"));
 
 
         btnAddToCart =findViewById(R.id.buttonLDAddToCart);
@@ -52,9 +52,9 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Product Already Added", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Product Already Added", Toast.LENGTH_SHORT).show();
 
-/*
+
                 SharedPreferences sharedPreferences=getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedPreferences.getString("username","").toString();
                 String product = tvPackageName.getText().toString();
@@ -71,7 +71,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
                     startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
 
 
-                }*/
+                }
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
