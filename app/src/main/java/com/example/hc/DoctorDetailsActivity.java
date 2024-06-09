@@ -85,8 +85,8 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             return insets;
         });
 
-        tv = findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonDDBack);
+        tv = findViewById(R.id.textViewLDTitle);
+        btn = findViewById(R.id.buttonLTGoToCart);
 
         Intent it =getIntent();
         String title = it.getStringExtra("title");

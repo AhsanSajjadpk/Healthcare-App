@@ -50,5 +50,13 @@ findDoctor.setOnClickListener(new View.OnClickListener() {
         startActivity(new Intent(HomeActivity.this , FindDoctorActivity.class ));
     }
 });
+
+        CardView labTest = findViewById(R.id.cardLabTest);
+        labTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this , LabTestActivity.class ));
+            }
+        });
     }
 }
