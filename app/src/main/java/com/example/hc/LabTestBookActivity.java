@@ -50,7 +50,7 @@ btnBooking.setOnClickListener(new View.OnClickListener() {
         String username = sharedpreferences.getString("username","").toString();
 
         Database db =new Database(getApplicationContext(),"healthcare",null,1);
-        db.addOrder(username,edName.getText().toString(),edAddress.getText().toString(),edContact.getText().toString(),Integer.parseInt(edPinCode.getText().toString()));
+        db.addOrder(username,edName.getText().toString(),edAddress.getText().toString(),edContact.getText().toString(),Integer.parseInt(edPinCode.getText().toString()),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
         db.removeCart(username,"lab");
         Toast.makeText(getApplicationContext(),"Your Booking is done Successfully",Toast.LENGTH_LONG).show();
         startActivity(new Intent(LabTestBookActivity.this,HomeActivity.class));

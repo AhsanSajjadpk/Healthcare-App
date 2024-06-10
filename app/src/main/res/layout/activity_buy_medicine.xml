@@ -5,8 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LabTestActivity"
-    android:background="@drawable/back2">
+    android:background="@drawable/back2"
+    tools:context=".BuyMedicineActivity">
+
 
     <TextView
         android:id="@+id/textViewLDName"
@@ -30,7 +31,7 @@
         android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Karachi"
+        android:text="Deliver Location : Karachi"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -45,10 +46,10 @@
         app:layout_constraintVertical_bias="0.015" />
 
     <TextView
-        android:id="@+id/textViewLTsTitle"
+        android:id="@+id/textViewBMTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lab Test and Packages"
+        android:text="Buy Medicines"
         android:textColor="@color/yellowLight"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -63,7 +64,7 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <ListView
-        android:id="@+id/listViewLTs"
+        android:id="@+id/listViewBM"
         android:layout_width="350dp"
         android:layout_height="480dp"
         android:layout_margin="10dp"
@@ -73,10 +74,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLTsTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMTitle" />
 
     <Button
-        android:id="@+id/buttonLTsBack"
+        android:id="@+id/buttonBMBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -84,10 +85,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewLTs" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBM" />
 
     <Button
-        android:id="@+id/buttonLTsGoToCart"
+        android:id="@+id/buttonBMGoToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -95,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewLTs" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBM" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
