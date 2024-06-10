@@ -135,7 +135,7 @@
         android:id="@+id/buttonBookAppointment"
         android:layout_width="220dp"
         android:layout_height="53dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/btn_bg"
         android:text="Register"
         android:textSize="26sp"
