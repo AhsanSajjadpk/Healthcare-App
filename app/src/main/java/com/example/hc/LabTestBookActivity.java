@@ -30,12 +30,11 @@ Button btnBooking;
             return insets;
         });
 
-    edName = findViewById(R.id.editTextLTBFullName);
+        edName = findViewById(R.id.editTextLTBFullName);
         edAddress = findViewById(R.id.editTextLTBAddress);
         edContact = findViewById(R.id.editTextLTBContact);
         edPinCode = findViewById(R.id.editTextLTBPincode);
-
-btnBooking =findViewById(R.id.buttonLTBBook);
+        btnBooking =findViewById(R.id.buttonLTBBook);
 
         Intent intent =getIntent();
 
@@ -46,6 +45,8 @@ btnBooking =findViewById(R.id.buttonLTBBook);
 btnBooking.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+        //  Toast.makeText(getApplicationContext(),"Loading..",Toast.LENGTH_LONG).show();
+
         SharedPreferences sharedpreferences = getSharedPreferences ("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username","").toString();
 

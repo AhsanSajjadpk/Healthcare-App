@@ -64,9 +64,9 @@ public class LabTestActivity extends AppCompatActivity {
             return insets;
         });
 
-        btnGoToCart = findViewById(R.id.buttonLTsGoToCart);
-        //btnBack = findViewById(R.id.buttonLTsBack);
-        listView = findViewById(R.id.listViewLTs);
+        btnGoToCart = findViewById(R.id.buttonLTGoToCart);
+       btnBack = findViewById(R.id.buttonLTExits);
+        listView = findViewById(R.id.listViewLT);
 
 
 btnBack.setOnClickListener(new View.OnClickListener() {

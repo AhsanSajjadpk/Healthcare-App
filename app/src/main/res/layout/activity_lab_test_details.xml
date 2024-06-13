@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textViewLDName"
+        android:id="@+id/textViewLTDName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcares"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewLTDTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Karachi"
@@ -40,12 +40,12 @@
 
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDName"
 
         app:layout_constraintVertical_bias="0.011" />
 
     <TextView
-        android:id="@+id/textViewLDPackageName"
+        android:id="@+id/textViewLTDPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Packages"
@@ -58,12 +58,12 @@
 
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDName"
 
         app:layout_constraintVertical_bias="0.057" />
 
     <EditText
-        android:id="@+id/EditTextLDTextMultiLine"
+        android:id="@+id/EditTextLTDTextMultiLine"
         android:layout_width="290dp"
         android:layout_height="370dp"
         android:layout_margin="10dp"
@@ -78,12 +78,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDTitle"
         tools:ignore="MissingConstraints"
         app:layout_constraintVertical_bias="0.142" />
 
     <Button
-        android:id="@+id/buttonLDGoToBack"
+        android:id="@+id/buttonLTDGoToBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -91,10 +91,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDTotalCost" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDTotalCost" />
 
     <Button
-        android:id="@+id/buttonLDAddToCart"
+        android:id="@+id/buttonLTDAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -102,10 +102,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDTotalCost" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDTotalCost" />
 
     <TextView
-        android:id="@+id/textViewLDTotalCost"
+        android:id="@+id/textViewLTDTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -114,7 +114,7 @@
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextLDTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextLTDTextMultiLine" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

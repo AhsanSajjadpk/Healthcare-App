@@ -20,13 +20,13 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqliteDatabase) {
 
-        String qry1 = "create table users (username text, email text, password text)";
+        String qry1 = "create table users(username text, email text, password text)";
         sqliteDatabase.execSQL(qry1);
 
-        String qry2 = "create table cart (username text, product text,price float, otype text)";
+        String qry2 = "create table cart(username text, product text,price float, otype text)";
         sqliteDatabase.execSQL(qry2);
 
-        String qry3 = "create table orderplace (username text, fullname text,address text, contactno text,pincode int,date text, time text,amount float,otype text)";
+        String qry3 = "create table orderplace(username text, fullname text,address text, contactno text,pincode int,date text, time text,amount float,otype text)";
         sqliteDatabase.execSQL(qry3);
 
     }
@@ -115,18 +115,19 @@ public class Database extends SQLiteOpenHelper {
 
     public void addOrder (String username, String fullname, String address, String contact, int pincode, String date,String time, float price, String otype ){
             ContentValues cv = new ContentValues();
-cv.put("username", username);
-cv.put("fullname", fullname);
-cv.put("address", address);
-cv.put("contactno", contact);
-cv.put("pincode", pincode);
-cv.put("date", date);
-cv.put("time", time);
-cv.put("amount", price);
-cv.put("otype", otype);
-SQLiteDatabase db = getWritableDatabase();
-db.insert( "orderplace",  null, cv);
-db.close();
+            cv.put("fullname", fullname);
+        cv.put("username", username);
+        cv.put("address", address);
+        cv.put("contactno", contact);
+        cv.put("pincode", pincode);
+        cv.put("date", date);
+        cv.put("time", time);
+        cv.put("amount", price);
+        cv.put("otype", otype);
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert( "orderplace",  null, cv);
+        db.close();
+
 }
 
 public ArrayList getOrderData(String username){
@@ -152,7 +153,7 @@ public ArrayList getOrderData(String username){
         str[0]= username;
         str[1]= fullname;
         str[2]= address;
-          str[3] = contact;
+        str[3] = contact;
         str[4] = date;
         str[5] =time;
         SQLiteDatabase db = getReadableDatabase();

@@ -36,6 +36,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_book_appointment);
@@ -47,16 +48,16 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
         });
 
-        tv = findViewById(R.id.textViewAppTitle);
-        ed1 = findViewById(R.id.editTextLTBFullName);
-        ed2 = findViewById(R.id.editTextLTBAddress);
-        ed3 = findViewById(R.id.editTextLTBPincode);
-        ed4 = findViewById(R.id.editTextLTBContact);
-        btnBook = findViewById(R.id.buttonBookAppointment);
-        btnBack = findViewById(R.id.buttonAppBack);
+        tv = findViewById(R.id.textViewBATitle);
+        ed1 = findViewById(R.id.editTextBAFullName);
+        ed2 = findViewById(R.id.editTextBAAddress);
+        ed3 = findViewById(R.id.editTextBAContact);
+        ed4 = findViewById(R.id.editTextBAFee);
+        btnBook = findViewById(R.id.buttonBA);
+        btnBack = findViewById(R.id.buttonBABack);
 
-        dateButton = findViewById(R.id.buttonAppDate);
-        timeButton = findViewById(R.id.buttonAppTime);
+        dateButton = findViewById(R.id.buttonBADate);
+        timeButton = findViewById(R.id.buttonBATime);
 
 
         // Edit Texts Not Editable
@@ -103,22 +104,26 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Appointment Loading!", Toast.LENGTH_SHORT).show();
+
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
 
                 SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedPreferences.getString("username","").toString();
 
+               // Toast.makeText(getApplicationContext(), "Appointment Loading 2!", Toast.LENGTH_SHORT).show();
 
 
-                if (db.checkAppointmentExists(username,title +" => "+fullName,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString())==1){
+                if (db.checkAppointmentExists(username,fullName,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString())==1){
                     Toast.makeText(getApplicationContext(), "Appointment Already Booked!", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    db.addOrder(username,title +" => "+fullName,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString(),Float.parseFloat(fees),"appointment");
+                    db.addOrder(username,fullName,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString(),Float.parseFloat(fees),"appointment");
                     Toast.makeText(getApplicationContext(), "Your Appointment is Done Successfully!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BookAppointmentActivity.this,HomeActivity.class));
                 }
 
+                Toast.makeText(getApplicationContext(), "Appointment Not Booked!", Toast.LENGTH_SHORT).show();
 
             }
         });

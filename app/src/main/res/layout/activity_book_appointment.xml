@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewBA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24 * 7 HealthCare"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.048" />
 
     <TextView
-        android:id="@+id/textViewAppTitle"
+        android:id="@+id/textViewBATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Book Appointment"
@@ -36,11 +36,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBA"
         app:layout_constraintVertical_bias="0.02" />
 
     <EditText
-        android:id="@+id/editTextLTBFullName"
+        android:id="@+id/editTextBAFullName"
         android:layout_width="265dp"
         android:layout_height="49dp"
         android:layout_marginTop="56dp"
@@ -60,10 +60,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBATitle" />
 
     <EditText
-        android:id="@+id/editTextLTBAddress"
+        android:id="@+id/editTextBAAddress"
         android:layout_width="265dp"
         android:layout_height="49dp"
         android:layout_marginTop="22dp"
@@ -73,7 +73,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Address"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -83,10 +83,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAFullName" />
 
     <EditText
-        android:id="@+id/editTextLTBPincode"
+        android:id="@+id/editTextBAContact"
         android:layout_width="265dp"
         android:layout_height="49dp"
         android:layout_marginTop="22dp"
@@ -106,10 +106,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAAddress" />
 
     <EditText
-        android:id="@+id/editTextLTBContact"
+        android:id="@+id/editTextBAFee"
         android:layout_width="265dp"
         android:layout_height="49dp"
         android:layout_marginTop="22dp"
@@ -129,10 +129,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPincode" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAContact" />
 
     <Button
-        android:id="@+id/buttonBookAppointment"
+        android:id="@+id/buttonBA"
         android:layout_width="220dp"
         android:layout_height="53dp"
         android:layout_marginTop="120dp"
@@ -142,10 +142,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAFee" />
 
     <Button
-        android:id="@+id/buttonAppBack"
+        android:id="@+id/buttonBABack"
         android:layout_width="220dp"
         android:layout_height="53dp"
         android:layout_marginTop="24dp"
@@ -155,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBookAppointment" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonBA" />
 
     <TextView
         android:id="@+id/textView3"
@@ -167,10 +167,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAFee" />
 
     <Button
-        android:id="@+id/buttonAppDate"
+        android:id="@+id/buttonBADate"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -191,10 +191,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBAFee" />
 
     <Button
-        android:id="@+id/buttonAppTime"
+        android:id="@+id/buttonBATime"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

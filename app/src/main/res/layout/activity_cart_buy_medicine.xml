@@ -113,7 +113,7 @@
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="55dp"
         android:text="Select Deliver Date"
         android:textColor="@color/yellowLight"
         app:layout_constraintEnd_toEndOf="parent"

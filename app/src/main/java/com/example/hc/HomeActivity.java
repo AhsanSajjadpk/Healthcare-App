@@ -55,24 +55,41 @@ findDoctor.setOnClickListener(new View.OnClickListener() {
         labTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               // Toast.makeText(HomeActivity.this, "Go to Lab test", Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(HomeActivity.this , LabTestActivity.class ));
             }
         });
+
+
+        // Not working
+
         CardView orderDetails = findViewById(R.id.cardOrderDetails);
         orderDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(HomeActivity.this, "Go to Order Details", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(HomeActivity.this , OrderDetailsActivity.class ));
             }
         });
+
+
+
+        // Working
+
         CardView buyMedicine = findViewById(R.id.cardBuyMedicine);
         buyMedicine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this , BuyMedicineActivity.class ));
+                Toast.makeText(HomeActivity.this, "Go to Buy Medicine", Toast.LENGTH_SHORT).show();
+
+                startActivity(new Intent(HomeActivity.this , BuyMedicineActivity.class));
             }
         });
 
+
+
+        // Working
         CardView health = findViewById(R.id.cardHealthDoctor);
         health.setOnClickListener(new View.OnClickListener() {
             @Override

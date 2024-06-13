@@ -34,9 +34,9 @@ public class LabTestDetailsActivity extends AppCompatActivity {
             return insets;
         });
 
-        tvPackageName =findViewById(R.id.textViewLDPackageName);
-        tvTotalCost =findViewById(R.id.textViewLDTotalCost);
-        edDetails =findViewById(R.id.EditTextLDTextMultiLine);
+        tvPackageName =findViewById(R.id.textViewLTDPackageName);
+        tvTotalCost =findViewById(R.id.textViewLTDTotalCost);
+        edDetails =findViewById(R.id.EditTextLTDTextMultiLine);
 
         edDetails.setOnKeyListener(null);
 
@@ -46,8 +46,8 @@ public class LabTestDetailsActivity extends AppCompatActivity {
          tvTotalCost.setText(intent.getStringExtra("text3"+"/--"));
 
 
-        btnAddToCart =findViewById(R.id.buttonLDAddToCart);
-        btnBack =findViewById(R.id.buttonLDGoToBack);
+        btnAddToCart =findViewById(R.id.buttonLTDAddToCart);
+        btnBack =findViewById(R.id.buttonLTDGoToBack);
 
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override

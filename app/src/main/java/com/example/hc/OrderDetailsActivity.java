@@ -6,14 +6,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +25,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
     ArrayList list;
     SimpleAdapter sa;
     ListView lst;
+
     Button btn;
 
     @Override
@@ -32,15 +33,11 @@ public class OrderDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_order_details);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
 
-        btn = findViewById(R.id.buttonBMGoToCart);
-        lst = findViewById(R.id.listViewOD);
+
+        btn = findViewById(R.id.buttonODBacks);
+        lst = findViewById(R.id.listViewODs);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,20 +45,22 @@ public class OrderDetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(OrderDetailsActivity.this,HomeActivity.class));
             }
         });
-        Database db =new Database(getApplicationContext(),"healthcare",null,1);
 
+
+        Database db =new Database(getApplicationContext(),"healthcare",null,1);
         SharedPreferences sharedpreferences = getSharedPreferences ("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username","").toString();
         ArrayList dbData = db.getOrderData(username);
 
 
         order_details = new String[dbData.size()][];
+
         for (int i=0;i<order_details.length;i++) {
             order_details[i] = new String[5];
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote( "$"));
             order_details[i][0] = strData[0];
-            order_details[i][1] = strData[1]; //+" "+strData[3];
+            order_details[i][1] = strData[1]; //+ " " + strData[3];
             if(strData[7].compareTo("medicine")==0){
                 order_details[i][3] = "Del: "+strData[4];
             }else {
@@ -86,7 +85,9 @@ public class OrderDetailsActivity extends AppCompatActivity {
         sa =new SimpleAdapter(this,list,
                 R.layout.multi_lines,
                 new String[]{"line1","line2","line3","line4","line5"},
-                new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e});
+                new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
+
+        );
         lst.setAdapter(sa);
 
     }

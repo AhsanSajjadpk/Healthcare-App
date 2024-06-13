@@ -55,7 +55,7 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
 
 
 
-        //------------------------------------
+        //------------------------------------Done
 
 
         SharedPreferences sharedpreferences = getSharedPreferences ("shared_prefs", Context.MODE_PRIVATE);

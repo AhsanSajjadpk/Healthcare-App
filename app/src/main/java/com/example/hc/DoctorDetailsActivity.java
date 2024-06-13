@@ -85,8 +85,8 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             return insets;
         });
 
-        tv = findViewById(R.id.textViewODTitle);
-        btn = findViewById(R.id.buttonBMGoToCart);
+        tv = findViewById(R.id.textViewDDTitle);
+        btn = findViewById(R.id.buttonDDBack);
 
         Intent it =getIntent();
         String title = it.getStringExtra("title");
@@ -130,7 +130,7 @@ sa =new SimpleAdapter(this,list,
         new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
 
 );
-        ListView lst = findViewById(R.id.listViewOD);
+        ListView lst = findViewById(R.id.listViewDD);
         lst.setAdapter(sa);
        lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override

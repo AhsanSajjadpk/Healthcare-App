@@ -49,12 +49,12 @@ public class CardLabActivity extends AppCompatActivity {
             return insets;
         });
 
-        dateButton =findViewById(R.id.buttonCartDate);
-        timeButton =findViewById(R.id.buttonCartTime);
-        btnCheckout =findViewById(R.id.buttonBMBack);
-        btnBack =findViewById(R.id.buttonBMGoToCart);
-        tvTotal =findViewById(R.id.textViewCartTotalCost);
-        lst =findViewById(R.id.listViewBM);
+        dateButton =findViewById(R.id.buttonCLDate);
+        timeButton =findViewById(R.id.buttonCLTime);
+        btnCheckout =findViewById(R.id.buttonCLCheckout);
+        btnBack =findViewById(R.id.buttonCLBack);
+        tvTotal =findViewById(R.id.textViewCLTotalCost);
+        lst =findViewById(R.id.listViewCL);
 
         SharedPreferences sharedpreferences = getSharedPreferences ("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username","").toString();

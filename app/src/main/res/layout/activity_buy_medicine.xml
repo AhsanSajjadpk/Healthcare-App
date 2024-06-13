@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textViewLDName"
+        android:id="@+id/textViewBMName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcares"
@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewBMTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deliver Location : Karachi"
@@ -41,12 +41,12 @@
 
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMName"
 
         app:layout_constraintVertical_bias="0.015" />
 
     <TextView
-        android:id="@+id/textViewBMTitle"
+        android:id="@+id/textViewBMTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buy Medicines"
@@ -59,7 +59,7 @@
 
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMName"
 
         app:layout_constraintVertical_bias="0.061" />
 

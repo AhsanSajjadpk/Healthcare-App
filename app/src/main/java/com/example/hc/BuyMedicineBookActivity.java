@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class BuyMedicineBookActivity extends AppCompatActivity {
-
+// Done
     EditText edName,edAddress,edPinCode,edContact;
     Button btnBooking;
 

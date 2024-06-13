@@ -63,7 +63,7 @@ public class BuyMedicineActivity extends AppCompatActivity {
     Button btnBack,btnGoToCart;
 
 
-
+// Done
 
 
 
@@ -79,6 +79,8 @@ public class BuyMedicineActivity extends AppCompatActivity {
 
         });
 
+
+        lst = findViewById(R.id.listViewBM);
    btnBack =findViewById(R.id.buttonBMBack);
         btnGoToCart =findViewById(R.id.buttonBMGoToCart);
 

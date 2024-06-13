@@ -20,7 +20,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
 TextView tvPackageName,tvTotalCost;
 EditText edDetails;
 Button btnBack,btnAddToCart;
-
+// Done
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

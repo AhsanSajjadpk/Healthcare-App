@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewLTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24 * 7 HealthCare"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.098" />
 
     <TextView
-        android:id="@+id/textViewAppTitle"
+        android:id="@+id/textViewLTBTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please Fill all Detail for Booking"
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTB"
         app:layout_constraintVertical_bias="0.039" />
 
     <EditText
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTBTitle" />
 
     <EditText
         android:id="@+id/editTextLTBAddress"

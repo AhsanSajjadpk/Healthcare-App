@@ -9,7 +9,7 @@
     android:background="@drawable/back2">
 
     <TextView
-        android:id="@+id/textViewLDName"
+        android:id="@+id/textViewLTName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcares"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewLTTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Karachi"
@@ -40,12 +40,12 @@
 
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTName"
 
         app:layout_constraintVertical_bias="0.015" />
 
     <TextView
-        android:id="@+id/textViewLTsTitle"
+        android:id="@+id/textViewLTTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Packages"
@@ -58,12 +58,12 @@
 
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTTitle"
 
         app:layout_constraintVertical_bias="0.061" />
 
     <ListView
-        android:id="@+id/listViewLTs"
+        android:id="@+id/listViewLT"
         android:layout_width="350dp"
         android:layout_height="480dp"
         android:layout_margin="10dp"
@@ -73,10 +73,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLTsTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTTitle2" />
 
     <Button
-        android:id="@+id/buttonLTsBack"
+        android:id="@+id/buttonLTExits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -84,10 +84,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewLTs" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewLT" />
 
     <Button
-        android:id="@+id/buttonLTsGoToCart"
+        android:id="@+id/buttonLTGoToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewLTs" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewLT" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

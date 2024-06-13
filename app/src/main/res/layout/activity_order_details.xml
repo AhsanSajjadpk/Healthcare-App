@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textViewLDName"
+        android:id="@+id/textViewODNames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcares"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewODTitles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Order Details"
@@ -40,24 +40,24 @@
 
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODNames"
 
         app:layout_constraintVertical_bias="0.021" />
 
     <ListView
-        android:id="@+id/listViewOD"
+        android:id="@+id/listViewODs"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewODTitle"
+        app:layout_constraintEnd_toEndOf="@+id/textViewODTitles"
         app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintStart_toStartOf="@+id/textViewODTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
+        app:layout_constraintStart_toStartOf="@+id/textViewODTitles"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitles" />
 
     <Button
-        android:id="@+id/buttonBMGoToCart"
+        android:id="@+id/buttonODBacks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewOD" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewODs" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

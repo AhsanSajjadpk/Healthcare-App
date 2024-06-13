@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Total Cost"
+        android:text="Total Costs"
         android:textColor="@color/yellowLight"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
